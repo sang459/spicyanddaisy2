@@ -25,10 +25,8 @@ if 'page' not in st.session_state:
 
 def main():
 
-    st.title("Onboarding Demo")
+    st.title("Planning Demo")
     st.markdown("*Reflect and stay on track*")
-    st.markdown('Goal tracker + personal journal + calendar, combined with a chatbot.')
-    st.markdown('In this demo, you will be able to experience the onboarding process with a help from Spicy and Daisy.')
     
     to_onboarding = st.button("Let's get started!")
     if to_onboarding:

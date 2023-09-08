@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 from streamlit_extras.switch_page_button import switch_page
 
-st.title("Planning Session")
+st.title("Planning Demo")
 
 OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
 
@@ -11,7 +11,7 @@ def get_response(chat_history):
                     model= "gpt-4",
                     messages=chat_history,
                     stream=False,
-                    temperature=0.3,
+                    temperature=0.91,
                     top_p = 0.93
                     )
 
